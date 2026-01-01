@@ -1,0 +1,124 @@
+<!DOCTYPE html> <!-- تعريف أن الملف يستخدم HTML5 -->
+<html lang="ar" dir="rtl"> <!-- صفحة عربية من اليمين لليسار -->
+
+<head>
+    <meta charset="UTF-8" /> <!-- دعم العربية -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" /> <!-- توافق مع الجوال -->
+    <title>جامعة الأميرة نورة</title>
+
+    <!-- Bootstrap RTL -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css" rel="stylesheet" />
+
+    <style>
+        /* تثبيت الفوتر أسفل الشاشة */
+        footer {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            z-index: 999;
+        }
+
+        /* لمنع الفوتر من تغطية المحتوى */
+        body {
+            padding-bottom: 120px;
+        }
+
+        /* تنسيق صورة السعودية */
+  .hero-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+    </style>
+</head>
+
+<body>
+
+<!-- شريط التنقل -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+
+        <!-- شعار الجامعة -->
+        <a class="navbar-brand" href="#">
+            <img src="images/logo.jpg" alt="شعار الجامعة" width="120" />
+        </a>
+
+        <!-- زر القائمة في الجوال -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- روابط القائمة -->
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto">
+
+                <!-- عن الجامعة -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">عن الجامعة</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">الهيكل التنظيمي</a></li>
+                    </ul>
+                </li>
+
+                <!-- القبول -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">القبول</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">شروط القبول</a></li>
+                    </ul>
+                </li>
+
+                <!-- الكليات -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">الكليات</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">كلية الهندسة</a></li>
+                        <li><a class="dropdown-item" href="#">كلية العلوم</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+
+    </div>
+</nav>
+
+<!-- صورة السعودية تحت الهيدر -->
+<div class="container">
+    <img src="images/header.jpg" alt="صورة عن المملكة العربية السعودية" class="hero-img" />
+</div>
+
+<!-- المحتوى -->
+<main class="container mt-4">
+
+
+    <!-- كارد الخدمات -->
+    <div class="card shadow-lg" style="max-width: 25rem;">
+        <div class="card-body text-center">
+            <h4 class="card-title mb-3">خدمات الجامعة</h4>
+            <p class="card-text">
+                 خدمات لطالبات الجامعة وأعضاء التدريس.
+            </p>
+            <a href="#" class="btn btn-success">استعرض الخدمات</a>
+        </div>
+    </div>
+
+</main>
+
+<!-- الفوتر -->
+<footer class="bg-success text-light py-4">
+    <div class="container text-center">
+        <p>📧 البريد الإلكتروني: info@university.com</p>
+        <p>📞 الهاتف: 0123456789</p>
+    </div>
+</footer>
+
+<!-- سكربت Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
